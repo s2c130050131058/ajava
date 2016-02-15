@@ -1,0 +1,8 @@
+<servlet>
+		<servlet-name>CurrentDate</servlet-name>
+		<servlet-class>CurrentDate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CurrentDate</servlet-name>
+		<url-pattern>/CurrentDate</url-pattern>
+	</servlet-mapping>
