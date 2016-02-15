@@ -1,0 +1,25 @@
+<servlet>
+		<servlet-name>SendRedirect</servlet-name>
+		<servlet-class>SendRedirect</servlet-class>
+	<init-param>
+		<param-name>postgre_Driver</param-name>
+		<param-value>org.postgresql.Driver</param-value>
+	</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SendRedirect</servlet-name>
+		<url-pattern>/SendRedirect</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SendRedirectWelcome</servlet-name>
+		<servlet-class>SendRedirectWelcome</servlet-class>
+	<init-param>
+		<param-name>postgre_Driver</param-name>
+		<param-value>org.postgresql.Driver</param-value>
+	</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SendRedirectWelcome</servlet-name>
+		<url-pattern>/SendRedirectWelcome</url-pattern>
+	</servlet-mapping>

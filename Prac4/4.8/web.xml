@@ -1,0 +1,8 @@
+<servlet>
+		<servlet-name>dice</servlet-name>
+		<servlet-class>dice</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dice</servlet-name>
+		<url-pattern>/dice</url-pattern>
+	</servlet-mapping>

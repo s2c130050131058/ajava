@@ -1,0 +1,9 @@
+<servlet>
+		<servlet-name>TimeUpdater</servlet-name>
+		<servlet-class>TimeUpdater</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TimeUpdater</servlet-name>
+		<url-pattern>/TimeUpdater</url-pattern>
+	</servlet-mapping>
+	

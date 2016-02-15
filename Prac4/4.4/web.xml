@@ -1,0 +1,8 @@
+<servlet>
+		<servlet-name>HolisticCounter</servlet-name>
+		<servlet-class>HolisticCounter</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HolisticCounter</servlet-name>
+		<url-pattern>/HolisticCounter</url-pattern>
+	</servlet-mapping>
