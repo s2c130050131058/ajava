@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true">  
+ 
+  <display-name>Welcome to Tomcat</display-name>
+  <description>
+     Welcome to Tomcat
+  </description>
+  
+  <servlet>
+		<servlet-name>sample</servlet-name>
+		<servlet-class>sample</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sample</servlet-name>
+		<url-pattern>/sample</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CurrentDate</servlet-name>
+		<servlet-class>CurrentDate</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CurrentDate</servlet-name>
+		<url-pattern>/CurrentDate</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>TotalCounter</servlet-name>
+		<servlet-class>TotalCounter</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TotalCounter</servlet-name>
+		<url-pattern>/TotalCounter</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>HolisticCounter</servlet-name>
+		<servlet-class>HolisticCounter</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HolisticCounter</servlet-name>
+		<url-pattern>/HolisticCounter</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>InitCounter</servlet-name>
+		<servlet-class>InitCounter</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InitCounter</servlet-name>
+		<url-pattern>/InitCounter</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>servername</servlet-name>
+		<servlet-class>servername</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servername</servlet-name>
+		<url-pattern>/servername</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>header</servlet-name>
+		<servlet-class>header</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>header</servlet-name>
+		<url-pattern>/header</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>dice</servlet-name>
+		<servlet-class>dice</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>dice</servlet-name>
+		<url-pattern>/dice</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>paramname</servlet-name>
+		<servlet-class>paramname</servlet-class>
+	
+	<init-param>
+		<param-name>Postgre_Driver</param-name>
+		<param-value>org.postgresql.Driver</param-value>
+  </init-param>
+	
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>paramname</servlet-name>
+		<url-pattern>/paramname</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>PassParamHtml</servlet-name>
+		<servlet-class>PassParamHtml</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PassParamHtml</servlet-name>
+		<url-pattern>/PassParamHtml</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>MultipleParam</servlet-name>
+		<servlet-class>MultipleParam</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MultipleParam</servlet-name>
+		<url-pattern>/MultipleParam</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>TimeUpdater</servlet-name>
+		<servlet-class>TimeUpdater</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TimeUpdater</servlet-name>
+		<url-pattern>/TimeUpdater</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SendRedirect</servlet-name>
+		<servlet-class>SendRedirect</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SendRedirect</servlet-name>
+		<url-pattern>/SendRedirect</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SendRedirectWelcome</servlet-name>
+		<servlet-class>SendRedirectWelcome</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SendRedirectWelcome</servlet-name>
+		<url-pattern>/SendRedirectWelcome</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CheckingTheSession</servlet-name>
+		<servlet-class>CheckingTheSession</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckingTheSession</servlet-name>
+		<url-pattern>/CheckingTheSession</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CheckingPreExistingTheSession</servlet-name>
+		<servlet-class>CheckingPreExistingTheSession</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckingPreExistingTheSession</servlet-name>
+		<url-pattern>/CheckingPreExistingTheSession</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetSessionValue</servlet-name>
+		<servlet-class>GetSessionValue</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetSessionValue</servlet-name>
+		<url-pattern>/GetSessionValue</url-pattern>
+	</servlet-mapping>
+	
+	
+  <servlet>
+		<servlet-name>HitCounter</servlet-name>
+		<servlet-class>HitCounter</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HitCounter</servlet-name>
+		<url-pattern>/HitCounter</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+		<servlet-name>ServletInsertingData</servlet-name>
+		<servlet-class>ServletInsertingData</servlet-class>
+	
+		</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletInsertingData</servlet-name>
+		<url-pattern>/ServletInsertingData</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+		<servlet-name>insertstatement</servlet-name>
+		<servlet-class>insertstatement</servlet-class>
+	
+		</servlet>
+	<servlet-mapping>
+		<servlet-name>insertstatement</servlet-name>
+		<url-pattern>/insertstatement</url-pattern>
+	</servlet-mapping>
+
+
+	
+	<servlet>
+		<servlet-name>cookie1</servlet-name>
+		<servlet-class>cookie1</servlet-class>
+	
+		</servlet>
+	<servlet-mapping>
+		<servlet-name>cookie1</servlet-name>
+		<url-pattern>/cookie1</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RetrieveData</servlet-name>
+		<servlet-class>RetrieveData</servlet-class>
+	
+		</servlet>
+	<servlet-mapping>
+		<servlet-name>RetrieveData</servlet-name>
+		<url-pattern>/RetrieveDatas</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>InsertData</servlet-name>
+		<servlet-class>InsertData</servlet-class>
+	
+		</servlet>
+	<servlet-mapping>
+		<servlet-name>InsertData</servlet-name>
+		<url-pattern>/InsertData</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SessionLastAccessTime</servlet-name>
+		<servlet-class>SessionLastAccessTime</servlet-class>
+	
+		</servlet>
+	<servlet-mapping>
+		<servlet-name>SessionLastAccessTime</servlet-name>
+		<url-pattern>/SessionLastAccessTime</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>cookie</servlet-name>
+		<servlet-class>cookie</servlet-class>
+	
+		</servlet>
+	<servlet-mapping>
+		<servlet-name>cookie</servlet-name>
+		<url-pattern>/cookie</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LeftJoin</servlet-name>
+		<servlet-class>LeftJoin</servlet-class>
+	
+		</servlet>
+	<servlet-mapping>
+		<servlet-name>LeftJoin</servlet-name>
+		<url-pattern>/LeftJoin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SelectData</servlet-name>
+		<servlet-class>SelectData</servlet-class>
+	
+		</servlet>
+	<servlet-mapping>
+		<servlet-name>SelectData</servlet-name>
+		<url-pattern>/SelectData</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>url1</servlet-name>
+		<servlet-class>url1</servlet-class>
+	
+		</servlet>
+	<servlet-mapping>
+		<servlet-name>url1</servlet-name>
+		<url-pattern>/url1</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>url</servlet-name>
+		<servlet-class>url</servlet-class>
+	
+		</servlet>
+	<servlet-mapping>
+		<servlet-name>url</servlet-name>
+		<url-pattern>/url</url-pattern>
+	</servlet-mapping>
+
+	
+	
+	<servlet>
+		<servlet-name>admin</servlet-name>
+		<servlet-class>admin</servlet-class>
+	
+		</servlet>
+	<servlet-mapping>
+		<servlet-name>admin</servlet-name>
+		<url-pattern>/admin</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>auth</servlet-name>
+		<servlet-class>auth</servlet-class>
+	
+		</servlet>
+	<servlet-mapping>
+		<servlet-name>auth</servlet-name>
+		<url-pattern>/auth</url-pattern>
+	</servlet-mapping>
+	
+	<filter>  
+  <filter-name>f1</filter-name>  
+  <filter-class>auth</filter-class>  
+  </filter>  
+  <filter-mapping>  
+  <filter-name>f1</filter-name>  
+  <url-pattern>/admin</url-pattern>  
+  </filter-mapping>  
+  
+ 	
+
+
+
+	
+	
+	
+</web-app>
